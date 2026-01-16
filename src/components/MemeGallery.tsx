@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Smile, Loader2 } from "lucide-react";
 
 interface Meme {
@@ -19,11 +19,29 @@ export default function MemeGallery() {
     const [memes, setMemes] = useState<Meme[]>([]);
     const [loading, setLoading] = useState(true);
 
+    const dataFetchedRef = useRef(false);
+
     useEffect(() => {
-        fetch("https://meme-api.com/gimme/wholesomememes/9")
-            .then((res) => res.json())
-            .then((data: MemeResponse) => {
-                setMemes(data.memes);
+        if (dataFetchedRef.current) return;
+        dataFetchedRef.current = true;
+
+        const subreddits = [
+            "distressingmemes",
+            "okbuddyretard",
+            "wholesomememes",
+        ];
+        const promises = subreddits.map((sub) =>
+            fetch(`https://meme-api.com/gimme/${sub}/3`).then((res) =>
+                res.json(),
+            ),
+        );
+
+        Promise.all(promises)
+            .then((responses) => {
+                const newMemes = responses.flatMap(
+                    (data: MemeResponse) => data.memes,
+                );
+                setMemes(newMemes);
                 setLoading(false);
             })
             .catch((err) => {
