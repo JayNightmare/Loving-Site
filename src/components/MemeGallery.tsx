@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Smile, Loader2 } from "lucide-react";
 
 interface Meme {
     postLink: string;
@@ -32,27 +33,28 @@ export default function MemeGallery() {
     }, []);
 
     return (
-        <section className="py-20 bg-pink-50">
-            <h2 className="text-4xl text-center font-bold text-pink-500 mb-10 drop-shadow-sm">
-                Daily Dose of Memes 😂
+        <section className="py-20 bg-pink-50 dark:bg-gray-950 transition-colors duration-300">
+            <h2 className="text-4xl text-center font-bold text-pink-500 dark:text-pink-400 mb-10 drop-shadow-sm flex items-center justify-center gap-3">
+                Daily Dose of Memes{" "}
+                <Smile className="w-10 h-10 text-pink-500 dark:text-pink-400 animate-bounce" />
             </h2>
 
             <div className="container mx-auto px-4">
                 {loading ? (
                     <div className="flex justify-center">
-                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500"></div>
+                        <Loader2 className="w-12 h-12 text-pink-500 animate-spin" />
                     </div>
                 ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
                         {memes.map((meme, i) => (
                             <a
                                 href={meme.postLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 key={i}
-                                className={`block bg-white rounded-2xl shadow-lg p-2 transition-all duration-300 hover:scale-105 hover:shadow-xl ${i % 2 === 0 ? "-rotate-1" : "rotate-1"}`}
+                                className={`block bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-2 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:rotate-0 ${i % 2 === 0 ? "-rotate-1" : "rotate-1"}`}
                             >
-                                <div className="overflow-hidden rounded-xl aspect-square bg-gray-100 flex items-center justify-center">
+                                <div className="overflow-hidden rounded-xl aspect-square bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
                                     <img
                                         src={meme.url}
                                         alt={meme.title}
@@ -61,7 +63,7 @@ export default function MemeGallery() {
                                     />
                                 </div>
                                 <div className="p-3">
-                                    <p className="text-center text-pink-500 font-medium truncate">
+                                    <p className="text-center text-pink-500 dark:text-pink-300 font-medium truncate">
                                         {meme.title}
                                     </p>
                                     <p className="text-center text-gray-400 text-xs mt-1">
