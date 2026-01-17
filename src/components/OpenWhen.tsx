@@ -7,16 +7,14 @@ const letters = [
         icon: <Smile className="w-8 h-8 text-yellow-500" />,
         label: "Open When You're Happy",
         color: "bg-yellow-50 border-yellow-200 dark:bg-yellow-900/20 dark:border-yellow-700",
-        message:
-            "I'm so glad you're happy! Your smile lights up my whole world. Keep shining bright!",
+        message: "So you're happy without me? Why do you hate me so :(",
     },
     {
         id: 2,
         icon: <CloudRain className="w-8 h-8 text-blue-500" />,
         label: "Open When You're Sad",
         color: "bg-blue-50 border-blue-200 dark:bg-blue-900/20 dark:border-blue-700",
-        message:
-            "I'm sorry you're feeling down. Remember that I love you more than anything and this feeling will pass. I'm here for you.",
+        message: "hehehe stinky, why are you a sad stink?",
     },
     {
         id: 3,
@@ -24,15 +22,14 @@ const letters = [
         label: "Open When You Miss Me",
         color: "bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-700",
         message:
-            "I miss you too! Close your eyes and imagine a big hug from me. We'll be together again soon.",
+            "You stinky. Like poop. Like a stinky poop. I can't miss you because I can smell you from here stinky",
     },
     {
         id: 4,
         icon: <Sun className="w-8 h-8 text-orange-500" />,
         label: "Open When It's Morning",
         color: "bg-orange-50 border-orange-200 dark:bg-orange-900/20 dark:border-orange-700",
-        message:
-            "Good morning sunshine! I hope you have the most amazing day today. You deserve it!",
+        message: "Wakey wakey time for schoooool",
     },
 ];
 
