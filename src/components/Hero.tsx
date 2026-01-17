@@ -7,6 +7,23 @@ const floatingImages = [
     "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXR1dGt0d3dvY2FiNWF4cmVrZ3llcWdtMGVudzhqNjVqem02bGswOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Fc0glzAjfjsaV0IfUQ/giphy.gif",
     "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXR1dGt0d3dvY2FiNWF4cmVrZ3llcWdtMGVudzhqNjVqem02bGswOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Zap6W7a0uSBGHmzdNA/giphy.gif",
     "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXR1dGt0d3dvY2FiNWF4cmVrZ3llcWdtMGVudzhqNjVqem02bGswOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zb8pfmGVvOu2xGpHm0/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXR1dGt0d3dvY2FiNWF4cmVrZ3llcWdtMGVudzhqNjVqem02bGswOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2jjRqprQV9dXiUSDdn/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXR1dGt0d3dvY2FiNWF4cmVrZ3llcWdtMGVudzhqNjVqem02bGswOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2hnY2BcJjfkfpQy616/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YW8yNWpkaTk5MnRpOXlrdWF1MDFqbHY5bXBndmV3MGtuaG0wZm5ndSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3HJDLawXjw1OyNNipc/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aGRqdmM0YWVxdW56aW1oY243aDc0djNmaTN4ODFmcm93bXYzZjM3NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XHhrTfkQFPH2J0neMc/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aGRqdmM0YWVxdW56aW1oY243aDc0djNmaTN4ODFmcm93bXYzZjM3NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/pmUxF2h220Sv7q7tOQ/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aGRqdmM0YWVxdW56aW1oY243aDc0djNmaTN4ODFmcm93bXYzZjM3NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ld5tIWEqbXWdl30fvD/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aGRqdmM0YWVxdW56aW1oY243aDc0djNmaTN4ODFmcm93bXYzZjM3NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/HIVN2emsCaBO1K3qWs/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eTF6bDV0dnE1amw2enhvbHFmMmxxNmx6dzVmZnRsdWs3MDloN2VjYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3UhzpnW81kao6bW9FI/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eTF6bDV0dnE1amw2enhvbHFmMmxxNmx6dzVmZnRsdWs3MDloN2VjYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/n6fCNvt0dtTwtdTd6H/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YXkyNGs3Y3U1MTJudGFrdzB2MzEwOWxtZnN4bGhiOWgwcm1haXNuayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7jd5xH9OZpdmyEcqIz/giphy.gif",
+    "https://media.giphy.com/media/RSmg2jxRfgd0bXYTjD/giphy.gif",
+    "https://media.giphy.com/media/xDKlSSGAWuKvlnhaNu/giphy.gif",
+    "https://media.giphy.com/media/gVNZfMGp7Iqz1of0nF/giphy.gif",
+    "https://media.giphy.com/media/ld5tIWEqbXWdl30fvD/giphy.gif",
+    "https://media.giphy.com/media/VHtbXwMkmcNcxSzx5I/giphy.gif",
+    "https://media.giphy.com/media/aZlQn6kooCKI4Px0Nb/giphy.gif",
+    "https://media.giphy.com/media/pyQe5pBkyOY3IMONmz/giphy.gif",
 
     // USER PHOTOS
     "/images/1.png",
@@ -83,6 +100,26 @@ export default function Hero() {
 
             <div className="absolute inset-0 bg-white/30 dark:bg-black/30 backdrop-blur-[2px] z-0"></div>
             <div className="relative z-10 text-center p-12 bg-white/60 dark:bg-gray-900/60 rounded-3xl shadow-xl border border-white/50 dark:border-white/10 backdrop-blur-md animate-bounce-slow max-w-2xl mx-4 transition-colors duration-300">
+                <img
+                    title="kenny"
+                    src="https://media.giphy.com/media/wvS4WU2wzOlNvE1kmD/giphy.gif"
+                    className="w-24 h-24 object-contain absolute top-[-3.6em]"
+                />
+                <img
+                    title="kenny"
+                    src="https://media.giphy.com/media/tjCDd86LkKfs0MW69H/giphy.gif"
+                    className="w-24 h-24 object-contain absolute top-[10em] left-[-2em]"
+                />
+                <img
+                    title="kenny"
+                    src="https://media.giphy.com/media/4FkEWC8NwDqM0BBOK4/giphy.gif"
+                    className="w-24 h-24 object-contain absolute top-[10em] right-[2em]"
+                />
+                <img
+                    title="kenny"
+                    src="https://media.giphy.com/media/oXPXtfkxpN8uxcCTh5/giphy.gif"
+                    className="w-24 h-24 object-contain absolute top-[1em] right-[-5px] overflow-hidden"
+                />
                 <div className="absolute -top-6 -left-6 text-yellow-400 animate-spin-slow">
                     <Sparkles size={48} />
                 </div>
